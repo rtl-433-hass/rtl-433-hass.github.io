@@ -396,7 +396,8 @@
 other 433/315/868/915 MHz sensors into Home Assistant, using
 <a href="https://github.com/merbanan/rtl_433">rtl_433</a> and an inexpensive
 software-defined radio (SDR) dongle.</p>
-<p>The project has two parts that work together:</p>
+<p>The project has an add-on and a companion integration that work together, plus
+the Python client library they are built on:</p>
 <div class="grid cards">
 <ul>
 <li>
@@ -414,6 +415,15 @@ software-defined radio (SDR) dongle.</p>
 devices and entities, with discovery, availability, and diagnostics.</p>
 <p><a class="md-button md-button--primary" href="https://rtl-433-hass.github.io/rtl_433/latest/">Documentation</a>
 <a class="md-button" href="https://github.com/rtl-433-hass/rtl_433">GitHub</a></p>
+</li>
+<li>
+<p><strong>Python library</strong></p>
+<hr />
+<p><code>pyrtl_433</code> — a standalone, dependency-light async client for the rtl_433
+server's WebSocket + <code>/cmd</code> API. The transport core the integration is
+built on, for your own tools.</p>
+<p><a class="md-button md-button--primary" href="https://rtl-433-hass.github.io/pyrtl_433/latest/">Documentation</a>
+<a class="md-button" href="https://github.com/rtl-433-hass/pyrtl_433">GitHub</a></p>
 </li>
 </ul>
 </div>
