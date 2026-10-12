@@ -13,3 +13,15 @@ Pages serves.
 ```sh
 uv run --with-requirements docs/requirements.txt mkdocs serve
 ```
+
+## Pull request previews
+
+[Tugboat](https://www.tugboatqa.com/) builds and serves the documentation using
+`.tugboat/config.yml`, following the
+[playwright-drupal example](https://github.com/Lullabot/playwright-drupal/tree/main/.tugboat).
+The preview URL loads the pull request's site directly. Builds use Python 3.14,
+the dependencies in `docs/requirements.txt`, and `mkdocs build --strict`, as in CI.
+
+Connect this repository to Tugboat and enable automatic previews for pull
+requests in its repository settings to have previews built when PRs are opened
+or updated.

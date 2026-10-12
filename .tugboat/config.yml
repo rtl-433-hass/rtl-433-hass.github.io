@@ -1,0 +1,12 @@
+services:
+  httpd:
+    image: tugboatqa/httpd:2
+    default: true
+
+    commands:
+      init:
+        - curl -LsSf https://astral.sh/uv/0.12.24/install.sh | sh
+
+      build:
+        - bash ${TUGBOAT_ROOT}/.tugboat/build.sh
+        - ln -snf ${TUGBOAT_ROOT}/site ${DOCROOT}
