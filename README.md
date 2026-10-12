@@ -3,6 +3,10 @@
 Landing page for the [rtl-433-hass](https://github.com/rtl-433-hass)
 organization, published at <https://rtl-433-hass.github.io/>.
 
+The shared beginner guide is published at
+<https://rtl-433-hass.github.io/getting-started/>. Its source is
+[`docs/getting-started.md`](docs/getting-started.md).
+
 Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/). Edit
 the sources in `docs/`, push to `main`, and the `Pages` workflow builds the site
 (`mkdocs build --strict`) and deploys it to the `gh-pages` branch, which GitHub

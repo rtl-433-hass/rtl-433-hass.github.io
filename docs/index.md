@@ -5,8 +5,20 @@ other 433/315/868/915 MHz sensors into Home Assistant, using
 [rtl_433](https://github.com/merbanan/rtl_433) and an inexpensive
 software-defined radio (SDR) dongle.
 
-The project has an add-on and a companion integration that work together, plus
-the Python client library they are built on:
+## Getting started
+
+The **add-on** runs your radio and decodes wireless sensor messages. The
+**integration** turns those messages into Home Assistant devices and entities.
+For the recommended Home Assistant OS setup, install both: the integration
+first, restart Home Assistant, then install and start the add-on.
+
+[Get started: from installation to your first sensor](getting-started.md){ .md-button .md-button--primary }
+
+The guide explains which repository goes where and walks you through every step.
+
+## Project documentation
+
+Use these references for configuration and advanced topics after setup:
 
 <div class="grid cards" markdown>
 
@@ -42,11 +54,3 @@ the Python client library they are built on:
     [GitHub](https://github.com/rtl-433-hass/pyrtl_433){ .md-button }
 
 </div>
-
-## Getting started
-
-1. Install and start the **add-on** so `rtl_433` is decoding your sensors.
-2. Install the **integration** and point one hub at each radio's WebSocket
-   endpoint.
-
-Full instructions live in each project's documentation linked above.
